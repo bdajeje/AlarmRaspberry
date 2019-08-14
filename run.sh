@@ -33,8 +33,6 @@ while true; do
 	current_hour=`date +"%H"`
 	current_mins=`date +"%M"`
 
-echo "check $current_hour:$current_mins"
-
 	if [ "$current_hour" = "$start_time_hour" ] &&
        [ "$current_mins" = "$start_time_mins" ]; then
 		startAlarm
