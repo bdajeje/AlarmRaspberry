@@ -3,7 +3,7 @@ Description=Plays musics from given directory to wake you up.
 After=systemd-user-sessions.service
 
 [Service]
-ExecStart=__PATH__/run.sh __MUSICS_DIR__ __RUN_TIME_SECS__ __START_TIME__
+ExecStart=__PATH__/run.sh __MUSICS_DIR__ __RUN_TIME_SECS__ __START_TIME__ __ACTIVE_DAYS__
 
 [Install]
 WantedBy=multi-user.target
