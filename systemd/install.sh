@@ -9,6 +9,13 @@ if [ "$#" -ne 2 ]; then
   exit 1
 fi
 
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
+apt-get update && apt-get install -y dateutils
+
 musics_dir=$1
 run_time_secs=$2
 start_time=$3
