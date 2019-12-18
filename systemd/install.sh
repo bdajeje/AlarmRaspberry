@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$#" -ne 2 ]; then
+if [ "$#" -ne 4 ]; then
   echo "Usage: install.sh musics_dir run_time_secs start_time active_days"
   echo "- musics_dir: path to a directory full of music files/directories."
   echo "- run_time_secs: Time (in seconds) to run music."
